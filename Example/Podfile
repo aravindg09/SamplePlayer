@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SamplePlayer_Example' do
+  pod 'SamplePlayer', :path => '../'
+
+  target 'SamplePlayer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
