@@ -46,7 +46,7 @@ public class PlayerView: UIView {
     }
     
     @IBAction func playOptionsTapped(_ sender: UIButton) {
-        if let playStatus = self.player?.playingVideo() {
+        if (self.player?.playingVideo()) != nil {
 //            sender.setImage(playStatus ? UIImage(systemName: "pause.fill") : UIImage(systemName: "play.fill"), for: .normal)
         }
     }
@@ -58,7 +58,7 @@ public class PlayerView: UIView {
         self.player?.forwardVideo(10)
     }
     @IBAction func muteOptionsTapped(_ sender: UIButton) {
-        if let muteStatus = self.player?.speakerOption() {
+        if (self.player?.speakerOption()) != nil {
 //            sender.setImage(muteStatus ? Images.Mute : Images.UnMute, for: .normal)
         }
     }

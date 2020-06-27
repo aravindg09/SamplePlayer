@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		4382398F7F210236A49B047F /* Pods_SamplePlayer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D856C21F0026198C7A8212EC /* Pods_SamplePlayer_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		89FCCC37701A3417AE7096C7 /* Pods_SamplePlayer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C849772DFA3B20C0DA5F3FEC /* Pods_SamplePlayer_Tests.framework */; };
+		F2266AAA24A7516E00726234 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2266AA924A7516E00726234 /* InitialViewController.swift */; };
+		F2266AAC24A7518100726234 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2266AAB24A7518100726234 /* PlayerViewController.swift */; };
+		F2266AAE24A7537E00726234 /* Sea - 33194.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2266AAD24A7537E00726234 /* Sea - 33194.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 		607FACD01AFB9204008FA782 /* SamplePlayer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamplePlayer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		C849772DFA3B20C0DA5F3FEC /* Pods_SamplePlayer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SamplePlayer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41872428118E84E80549738 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D856C21F0026198C7A8212EC /* Pods_SamplePlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SamplePlayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2266AA924A7516E00726234 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		F2266AAB24A7518100726234 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		F2266AAD24A7537E00726234 /* Sea - 33194.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sea - 33194.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,11 @@
 		607FACD21AFB9204008FA782 /* Example for SamplePlayer */ = {
 			isa = PBXGroup;
 			children = (
+				F2266AA824A7515C00726234 /* Controllers */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				F2266AAD24A7537E00726234 /* Sea - 33194.mp4 */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -157,6 +162,15 @@
 				0D2E0A561D1C1BF10A3989C5 /* Pods-SamplePlayer_Tests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F2266AA824A7515C00726234 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2266AA924A7516E00726234 /* InitialViewController.swift */,
+				F2266AAB24A7518100726234 /* PlayerViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2266AAE24A7537E00726234 /* Sea - 33194.mp4 in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -331,8 +346,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				F2266AAA24A7516E00726234 /* InitialViewController.swift in Sources */,
+				F2266AAC24A7518100726234 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
