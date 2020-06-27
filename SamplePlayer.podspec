@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SamplePlayer'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SamplePlayer.'
+  s.summary          = 'A Simple AVPlayer View Pods for Playing Videos.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,18 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  A Simple AVPlayer Custom View Pods. Can integrate for playing videos with all the functionality by designing from UI in App Side
                        DESC
 
-  s.homepage         = 'https://github.com/aravindg@yupptv.com/SamplePlayer'
+  s.homepage         = 'https://github.com/aravindg09/SamplePlayer.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'aravindg@yupptv.com' => 'aravindg@yupptv.com' }
-  s.source           = { :git => 'https://github.com/aravindg@yupptv.com/SamplePlayer.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/aravindg09/SamplePlayer.git', :tag => s.version.to_s }
+  s.exclude_files = "Constrictor/Constrictor/*.plist"
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
+  s.swift_versions = '5.0'
   s.source_files = 'SamplePlayer/Classes/**/*'
   
   # s.resource_bundles = {

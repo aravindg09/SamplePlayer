@@ -1,0 +1,22 @@
+{
+  "name": "SamplePlayer",
+  "version": "0.1.0",
+  "summary": "A short description of SamplePlayer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/aravindg@yupptv.com/SamplePlayer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "aravindg@yupptv.com": "aravindg@yupptv.com"
+  },
+  "source": {
+    "git": "https://github.com/aravindg@yupptv.com/SamplePlayer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SamplePlayer/Classes/**/*"
+}

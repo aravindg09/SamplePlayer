@@ -1,0 +1,6 @@
+framework module SamplePlayer {
+  umbrella header "SamplePlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

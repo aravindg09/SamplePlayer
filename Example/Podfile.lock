@@ -1,0 +1,16 @@
+PODS:
+  - SamplePlayer (0.1.0)
+
+DEPENDENCIES:
+  - SamplePlayer (from `../`)
+
+EXTERNAL SOURCES:
+  SamplePlayer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SamplePlayer: 56b3700312302c99c806bf87379e98fa3f58205f
+
+PODFILE CHECKSUM: d266103445041405b476ceb27e316b939cedd959
+
+COCOAPODS: 1.9.3
