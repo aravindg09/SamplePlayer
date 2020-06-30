@@ -20,14 +20,25 @@ public class CustomPlayer {
     
     
     //MARK: - Variables
-    private var player:AVPlayer?
+    var player:AVPlayer?
     private var playerItem:AVPlayerItem?
+    private var playerLayer: AVPlayerLayer!
     private var urlPath: URL!
     private var isSlider: Bool = false
     open var videoPath: String!
     public var duration: Float!
     public var delegates: CustomPlayerDelegates!
     private var timeObserver: Any!
+    
+    open var rate: Float {
+        get {
+            return self.player?.rate ?? 1.0
+        }
+        set {
+            self.player?.rate = newValue
+        }
+    }
+    
     
     public init(frame: CGRect, videoView: UIView, videoPath: String) {
         self.videoView = videoView
@@ -45,17 +56,15 @@ public class CustomPlayer {
         let playerItem:AVPlayerItem = AVPlayerItem(url: urlPath)
         player = AVPlayer(playerItem: playerItem)
         
-        let playerLayer=AVPlayerLayer(player: player!)
+        playerLayer=AVPlayerLayer(player: player!)
         playerLayer.frame = frame
-        print("Layer Frame: \(playerLayer.frame)")
         self.videoView.layer.addSublayer(playerLayer)
         
         let duration : CMTime = playerItem.asset.duration
         let seconds : Float64 = CMTimeGetSeconds(duration)
         
         self.duration = Float(seconds)
-        
-        self.timeObserver = self.player?.addPeriodicTimeObserver(forInterval: CMTime(seconds: 1, preferredTimescale: 1), queue: DispatchQueue.main, using: {[unowned self] (progressTime) in
+        self.timeObserver = self.player?.addPeriodicTimeObserver(forInterval: CMTime(seconds: 1, preferredTimescale: 1), queue: DispatchQueue.global(qos: .background), using: {[unowned self] (progressTime) in
             if (self.player?.currentItem?.duration) != nil {
                 let seconds = CMTimeGetSeconds(progressTime)
                 if !self.isSlider {
@@ -69,6 +78,10 @@ public class CustomPlayer {
         NotificationCenter.default.addObserver(self, selector: #selector(playerEndedPlaying(_:)), name: NSNotification.Name("AVPlayerItemDidPlayToEndTimeNotification"), object: nil)
     }
     
+    func updateLayerFrame(frame: CGRect) {
+        self.playerLayer.frame = frame
+    }
+    
     //MARK: Play - Pause
     public func playingVideo() -> Bool {
         if self.player?.isPlaying ?? false {
@@ -80,12 +93,12 @@ public class CustomPlayer {
     }
     
     //MARK: Play
-    private func playVideo() {
+    public func playVideo() {
         self.player?.play()
     }
     
     //MARK: Pause
-    private func pauseVideo() {
+    public func pauseVideo() {
         self.player?.pause()
     }
     

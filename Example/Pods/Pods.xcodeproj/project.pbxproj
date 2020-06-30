@@ -15,10 +15,11 @@
 		A008C89C75D2AD77C21BF1EA6580467E /* Pods-SamplePlayer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE630DB5D20FB97691D7458C3BB81B9 /* Pods-SamplePlayer_Tests-dummy.m */; };
 		A52D4535C7F48038BD0F147676F44E4E /* SamplePlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 778C04D792B6EF613A565745EBEDF119 /* SamplePlayer-dummy.m */; };
 		B17ACB5880D39CE3C69BB625E2F280C9 /* Pods-SamplePlayer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ED968765E202E8582B68685246F2E51 /* Pods-SamplePlayer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B759A8AE9A77EACC869D609CC5B3B7E2 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC6822465E567DA80F6288B337D830 /* ReplaceMe.swift */; };
 		C514EE1DDCB1344B9423AEED65ED5B2C /* Pods-SamplePlayer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CED8D7BDD722EE47E09B6ED4BFCEC5 /* Pods-SamplePlayer_Example-dummy.m */; };
 		E23C6942CF60CFCAD1ADD3D3754DEFD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		F1A3295346DCCAD047FDD15575A0DBDB /* CustomPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC3E4BE1E0935E48B71A73E521E2155 /* CustomPlayer.swift */; };
+		F24424F024AA34280028AB80 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24424EF24AA34280028AB80 /* StopWatch.swift */; };
+		F24424F224AA376D0028AB80 /* PlayerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24424F124AA376D0028AB80 /* PlayerDelegates.swift */; };
 		F9F832A5445459076444F3B5568C5F22 /* Pods-SamplePlayer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78D39BA1765F48431D1A2802EF6057AB /* Pods-SamplePlayer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -46,21 +47,20 @@
 		1255F06804E43096B8D31F442D371F10 /* SamplePlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SamplePlayer-umbrella.h"; sourceTree = "<group>"; };
 		143BE17F078C571FAD304FF56E88F83C /* Pods-SamplePlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SamplePlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1ED968765E202E8582B68685246F2E51 /* Pods-SamplePlayer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SamplePlayer_Tests-umbrella.h"; sourceTree = "<group>"; };
-		24BC6822465E567DA80F6288B337D830 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SamplePlayer/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		2AE630DB5D20FB97691D7458C3BB81B9 /* Pods-SamplePlayer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SamplePlayer_Tests-dummy.m"; sourceTree = "<group>"; };
-		31978A3E96A8A386E3A4E4435DEE1DD9 /* SamplePlayer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SamplePlayer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		31978A3E96A8A386E3A4E4435DEE1DD9 /* SamplePlayer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SamplePlayer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3834C6142A74D5286AEE5006A735FC49 /* Pods-SamplePlayer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SamplePlayer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		38899B9BDFCF868635FE8DCA92121E81 /* SamplePlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SamplePlayer-Info.plist"; sourceTree = "<group>"; };
-		3B4B8A30469C4299287DF6657414A643 /* Pods_SamplePlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SamplePlayer_Example.framework; path = "Pods-SamplePlayer_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4B8A30469C4299287DF6657414A643 /* Pods_SamplePlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SamplePlayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		430EA3C8BDF2FB2B549B1B66740F7262 /* Pods-SamplePlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SamplePlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4AA89C538503EF5C92D6C475FBD66011 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		6D43B730F0F9B6D1E4DF318BC20F4AFF /* SamplePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SamplePlayer.framework; path = SamplePlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA89C538503EF5C92D6C475FBD66011 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6D43B730F0F9B6D1E4DF318BC20F4AFF /* SamplePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SamplePlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		778C04D792B6EF613A565745EBEDF119 /* SamplePlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SamplePlayer-dummy.m"; sourceTree = "<group>"; };
 		78D39BA1765F48431D1A2802EF6057AB /* Pods-SamplePlayer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SamplePlayer_Example-umbrella.h"; sourceTree = "<group>"; };
 		84A78A07127E2DA200189EC20C229C84 /* Pods-SamplePlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SamplePlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		97ADC5DB2A5B6C616BADFC1540482490 /* Pods-SamplePlayer_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SamplePlayer_Example-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A328D53CF52F8555ECBFB9DBEC94B61E /* PlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		A42967FCE2E93C46B7E5560ADD5717A7 /* SamplePlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SamplePlayer.release.xcconfig; sourceTree = "<group>"; };
 		A5CED8D7BDD722EE47E09B6ED4BFCEC5 /* Pods-SamplePlayer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SamplePlayer_Example-dummy.m"; sourceTree = "<group>"; };
@@ -68,13 +68,15 @@
 		AE534921899D455EF96D79206CA18359 /* Pods-SamplePlayer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SamplePlayer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B9AFB97C9E0F035C5A6CF18BB264CDC5 /* Pods-SamplePlayer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SamplePlayer_Tests.modulemap"; sourceTree = "<group>"; };
 		BAC3E4BE1E0935E48B71A73E521E2155 /* CustomPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomPlayer.swift; sourceTree = "<group>"; };
-		BB9EE0AFFBC7A38A14A51163622AED0A /* Pods_SamplePlayer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SamplePlayer_Tests.framework; path = "Pods-SamplePlayer_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB9EE0AFFBC7A38A14A51163622AED0A /* Pods_SamplePlayer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SamplePlayer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC48A94CCB128BC6FC44115C33DBFF24 /* SamplePlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SamplePlayer-prefix.pch"; sourceTree = "<group>"; };
 		BD2CC40419F623B8983861587D7C1E3A /* Pods-SamplePlayer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SamplePlayer_Example-frameworks.sh"; sourceTree = "<group>"; };
 		BE9620F602C5F7B8770B855402CC475D /* Pods-SamplePlayer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SamplePlayer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		D2C9918538E88D585A3465144B21ABBF /* SamplePlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SamplePlayer.modulemap; sourceTree = "<group>"; };
 		E9749A2DF4B05F29F6E6B29B887147B7 /* Pods-SamplePlayer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SamplePlayer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		EDFC2BA190920C5D432705930CEA2625 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		EDFC2BA190920C5D432705930CEA2625 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F24424EF24AA34280028AB80 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
+		F24424F124AA376D0028AB80 /* PlayerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDelegates.swift; sourceTree = "<group>"; };
 		F4734E5F6EAD202D70A461A42302A2D6 /* AVPlayerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AVPlayerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,7 +169,6 @@
 		7E5209197D159B5DC0EAB95203DEA04F /* SamplePlayer */ = {
 			isa = PBXGroup;
 			children = (
-				24BC6822465E567DA80F6288B337D830 /* ReplaceMe.swift */,
 				CB2E262EAA11B6AE34DB382B62DC93A3 /* AVPlayer Class */,
 				F26B5269433A5C6B6921B40FEF1E5A05 /* PlayerView */,
 				84D7FC42458901F92ED73F87385C940D /* Pod */,
@@ -245,6 +246,8 @@
 			isa = PBXGroup;
 			children = (
 				A328D53CF52F8555ECBFB9DBEC94B61E /* PlayerView.swift */,
+				F24424EF24AA34280028AB80 /* StopWatch.swift */,
+				F24424F124AA376D0028AB80 /* PlayerDelegates.swift */,
 			);
 			name = PlayerView;
 			path = SamplePlayer/Classes/PlayerView;
@@ -344,6 +347,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					0916CD10FEC1E138E75433EE95C91DF4 = {
+						LastSwiftMigration = 1150;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -404,9 +412,10 @@
 			files = (
 				05134DFC06AADFBB6F91EF715B4465F5 /* AVPlayerExtension.swift in Sources */,
 				F1A3295346DCCAD047FDD15575A0DBDB /* CustomPlayer.swift in Sources */,
+				F24424F024AA34280028AB80 /* StopWatch.swift in Sources */,
 				0E70B121AEB31A62C75D481ECA61EA22 /* PlayerView.swift in Sources */,
-				B759A8AE9A77EACC869D609CC5B3B7E2 /* ReplaceMe.swift in Sources */,
 				A52D4535C7F48038BD0F147676F44E4E /* SamplePlayer-dummy.m in Sources */,
+				F24424F224AA376D0028AB80 /* PlayerDelegates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,7 +461,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SamplePlayer_Tests/Pods-SamplePlayer_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SamplePlayer_Tests/Pods-SamplePlayer_Tests.modulemap";
@@ -474,6 +483,7 @@
 			baseConfigurationReference = ABFC0231BA44B7F9A86711EE3A21232A /* Pods-SamplePlayer_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -485,7 +495,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SamplePlayer_Example/Pods-SamplePlayer_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SamplePlayer_Example/Pods-SamplePlayer_Example.modulemap";
@@ -496,6 +506,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -519,7 +530,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SamplePlayer/SamplePlayer-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SamplePlayer/SamplePlayer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SamplePlayer/SamplePlayer.modulemap";
 				PRODUCT_MODULE_NAME = SamplePlayer;
@@ -539,6 +550,7 @@
 			baseConfigurationReference = 430EA3C8BDF2FB2B549B1B66740F7262 /* Pods-SamplePlayer_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -550,7 +562,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SamplePlayer_Example/Pods-SamplePlayer_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SamplePlayer_Example/Pods-SamplePlayer_Example.modulemap";
@@ -561,6 +573,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -583,7 +597,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SamplePlayer/SamplePlayer-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SamplePlayer/SamplePlayer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SamplePlayer/SamplePlayer.modulemap";
 				PRODUCT_MODULE_NAME = SamplePlayer;
@@ -647,13 +661,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -710,7 +723,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -739,7 +752,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SamplePlayer_Tests/Pods-SamplePlayer_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SamplePlayer_Tests/Pods-SamplePlayer_Tests.modulemap";

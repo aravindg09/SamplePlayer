@@ -71,10 +71,16 @@
                                                 <color key="thumbTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </slider>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="e9h-Hk-guh">
-                                                <rect key="frame" x="131" y="26" width="113" height="22"/>
+                                                <rect key="frame" x="63.5" y="26" width="248" height="22"/>
                                                 <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QA0-cH-cgr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="43.5" height="22"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xG-Nd-B8Q">
-                                                        <rect key="frame" x="0.0" y="0.0" width="25" height="22"/>
+                                                        <rect key="frame" x="67.5" y="0.0" width="25" height="22"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="backward.fill" catalog="system"/>
                                                         <connections>
@@ -82,7 +88,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfL-od-EVe">
-                                                        <rect key="frame" x="49" y="0.0" width="15" height="22"/>
+                                                        <rect key="frame" x="116.5" y="0.0" width="15" height="22"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="play.fill" catalog="system"/>
                                                         <connections>
@@ -90,13 +96,19 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UON-77-3bC">
-                                                        <rect key="frame" x="88" y="0.0" width="25" height="22"/>
+                                                        <rect key="frame" x="155.5" y="0.0" width="25" height="22"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="forward.fill" catalog="system"/>
                                                         <connections>
                                                             <action selector="forwardTapped:" destination="0jX-gN-nGN" eventType="touchUpInside" id="kRM-H7-eCH"/>
                                                         </connections>
                                                     </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwn-YD-0X3">
+                                                        <rect key="frame" x="204.5" y="0.0" width="43.5" height="22"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1a-JZ-S0x">
@@ -132,7 +144,9 @@
                                     <constraint firstItem="BIZ-Lp-u2h" firstAttribute="leading" secondItem="0jX-gN-nGN" secondAttribute="leading" id="s2U-oO-WUl"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="currentDurationLabel" destination="QA0-cH-cgr" id="sfR-ZW-j3C"/>
                                     <outlet property="playerSlider" destination="HkN-1s-C5S" id="qQ3-1H-bmj"/>
+                                    <outlet property="totalDurationLabel" destination="hwn-YD-0X3" id="Hdf-qp-G4D"/>
                                     <outlet property="videoView" destination="BIZ-Lp-u2h" id="b5i-Rh-Ky8"/>
                                 </connections>
                             </view>
