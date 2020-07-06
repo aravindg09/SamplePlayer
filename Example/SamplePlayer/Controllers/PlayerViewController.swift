@@ -17,10 +17,11 @@ class PlayerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-                let urlPath = "https://djnr788nhodr8.cloudfront.net/SCTE%2035%20data/hallmarkmovies_IP_feed/package_3/hallmarkmovies_IP_feed_20200619-16.29.24.m3u8"
+                let urlPath = "https://djnr788nhodr8.cloudfront.net/SCTE%2035%20data/hallmarkmovies_IP_feed/package_4/hallmarkmovies_IP_feed_20200619-16.29.24.m3u8"
 //                let urlPath = Bundle.main.path(forResource: "Sea - 33194", ofType: "mp4")!
                 customPlayerView.playerSetUp(with: customPlayerView.bounds, and: urlPath)
-        self.customPlayerView.updatePlayRate(with: 2.0)
+        customPlayerView.playVideo()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

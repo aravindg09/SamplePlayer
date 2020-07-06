@@ -13,7 +13,7 @@ import AVFoundation
 }
 
 
-public class CustomPlayer {
+public class CustomPlayer: NSObject {
 
     //MARK: - IBOutlets
     private var videoView: UIView!
@@ -23,6 +23,7 @@ public class CustomPlayer {
     var player:AVPlayer?
     private var playerItem:AVPlayerItem?
     private var playerLayer: AVPlayerLayer!
+    private var metadataCollector: AVPlayerItemMetadataCollector!
     private var urlPath: URL!
     private var isSlider: Bool = false
     open var videoPath: String!
@@ -41,6 +42,7 @@ public class CustomPlayer {
     
     
     public init(frame: CGRect, videoView: UIView, videoPath: String) {
+        super.init()
         self.videoView = videoView
         self.videoPath = videoPath
         self.customPlayerSetup(frame: frame)
@@ -53,12 +55,17 @@ public class CustomPlayer {
             let url = URL(fileURLWithPath: videoPath ?? "")
             urlPath = url
         }
+        metadataCollector = AVPlayerItemMetadataCollector()
+        metadataCollector.setDelegate(self, queue: DispatchQueue.main)
+        
         let playerItem:AVPlayerItem = AVPlayerItem(url: urlPath)
+        playerItem.add(metadataCollector)
+        
         player = AVPlayer(playerItem: playerItem)
         
         playerLayer=AVPlayerLayer(player: player!)
         playerLayer.frame = frame
-        self.videoView.layer.addSublayer(playerLayer)
+        self.videoView.layer.insertSublayer(playerLayer, at: 0)
         
         let duration : CMTime = playerItem.asset.duration
         let seconds : Float64 = CMTimeGetSeconds(duration)
@@ -184,4 +191,30 @@ public class CustomPlayer {
         NotificationCenter.default.removeObserver(self)
         print("Custom Player Deinitialized....")
     }
+    
+    
+    
+    
+}
+
+//MARK: - MetaData Collector
+extension CustomPlayer: AVPlayerItemMetadataCollectorPushDelegate {
+    
+    public func prepareToPlay(url: URL) {
+//        metadataCollector = AVPlayerItemMetadataCollector()
+//        metadataCollector.setDelegate(self, queue: DispatchQueue.main)
+//
+//        playerItem = AVPlayerItem(url: url)
+//        playerItem?.add(metadataCollector)
+//
+//        player?.replaceCurrentItem(with: playerItem)
+    }
+    
+    
+    public func metadataCollector(_ metadataCollector: AVPlayerItemMetadataCollector, didCollect metadataGroups: [AVDateRangeMetadataGroup], indexesOfNewGroups: IndexSet, indexesOfModifiedGroups: IndexSet) {
+        for data in metadataGroups {
+            print(data)
+        }
+    }
+    
 }

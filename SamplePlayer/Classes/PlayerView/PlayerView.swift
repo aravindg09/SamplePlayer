@@ -37,7 +37,7 @@ public class PlayerView: UIView {
     public override func layoutSubviews() {
         super.layoutSubviews()
         if self.player != nil {
-            self.player?.updateLayerFrame(frame: videoView.bounds)
+            self.player?.updateLayerFrame(frame: self.bounds)
         }
     }
     
@@ -47,7 +47,7 @@ public class PlayerView: UIView {
     }
     
     public func playerSetUp(with frame: CGRect, and videoPath: String) {
-        self.player = CustomPlayer(frame: frame, videoView: videoView, videoPath: videoPath)
+        self.player = CustomPlayer(frame: frame, videoView: self, videoPath: videoPath)
         self.player?.delegates = self
         
         self.playerSlider.minimumValue = 0
@@ -59,8 +59,8 @@ public class PlayerView: UIView {
         }
         self.playerSlider.addTarget(self, action: #selector(playbackSlider(_:_:)), for: .valueChanged)
         
-        self.player?.player?.addObserver(self, forKeyPath: "timeControlStatus", options: [.old, .new], context: nil)
-        self.player?.player?.addObserver(self, forKeyPath: "timedMetadata", options: [], context: nil)
+        self.player?.player?.addObserver(self, forKeyPath: #keyPath(AVPlayer.timeControlStatus), options: [.old, .new], context: nil)
+        self.player?.player?.currentItem?.addObserver(self, forKeyPath: "timedMetadata", options: [], context: nil)
         
     }
     
@@ -84,10 +84,10 @@ public class PlayerView: UIView {
 //                }
             }
         }else if keyPath == "timedMetadata" {
-            let data: AVPlayerItem = object as! AVPlayerItem
-
-            for item in data.timedMetadata! as [AVMetadataItem] {
-                print("Meta Data: ",item.value as Any)
+            if let data: AVPlayerItem = object as? AVPlayerItem {
+                if let dataCollector = data.timedMetadata {
+                    print(dataCollector)
+                }
             }
         }
     }
